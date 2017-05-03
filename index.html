@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    <title> Pro Website</title>
+        
+<!--Auto resize to fit devices-->
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+<!--CSS Stylesheet-->
+         <link rel="stylesheet" type="text/css" href="style.css">
+    
+<!--Bootstrap CDN -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">  
+        
+    </head>
+    
+    <body>
+        <div id="mySidenav" class="sidenav">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+  <a href="#">PS4</a>
+  <a href="#">Xbox1</a>
+</div>
+
+<!--Black top Border-->
+<div class="row1">
+    
+<!--Open sidenav button-->
+        <span style="font-size:20px;cursor:pointer" class="sidenavbutton" onclick="openNav()">&#9776; PS4/XB1 Exclusives</span>
+    </div>  
+        
+<!--Image Slideshow-->
+        
+        <div class="container-fluid" style="max-width:800px">
+        <a href="#"><img class="mySlides" src="absolver.jpg" style="width:100%"></a>
+        <a href="#"><img class="mySlides" src="battlegrounds.jpg" style="width:100%"></a>
+        <a href="#"><img class="mySlides" src="ElderScrolls6.jpg" style="width:100%"></a>
+        <a href="#"><img class="mySlides" src="CODWW2.jpg" style="width:100%"></a>
+<br>
+        </div>
+
+<!--Javascript for slideshow functionality-->
+<script>
+    
+var myIndex = 0;
+carousel();
+
+function carousel() {
+    var i;
+    var x = document.getElementsByClassName("mySlides");
+    for (i = 0; i < x.length; i++) {
+       x[i].style.display = "none";  
+    }
+    myIndex++;
+    if (myIndex > x.length) {myIndex = 1}    
+    x[myIndex-1].style.display = "block";  
+    setTimeout(carousel, 3000); // Change image every 3 seconds
+}
+</script>
+        
+<!--End of image slideshow code-->
+        
+        <h3>Upcoming Games of 2017</h3>
+    
+        <p> There are a lot of good games coming out in 2017 for PS4 and Xbox1. This site is meant to highlight and give information about some of them. I'm very excited and can't wait to play these games once they are released.
+        </p>
+               
+<dl>
+    <dt>Upcoming Games</dt>        
+            <li> Absolver - 2017</li>    
+            <li> Call of Duty WWII - 2017</li>   
+            <li> Battlegrounds - 2017</li>   
+            <li> Elder Scrolls 6 - 2017</li>
+            <li> Friday the 13th - May 26th, 2017</li> 
+</dl>
+       
+    
+<!--JS functionality for sidenav-->        
+        <script>
+function openNav() {
+    document.getElementById("mySidenav").style.width = "250px";
+}
+
+function closeNav() {
+    document.getElementById("mySidenav").style.width = "0";
+}
+</script>
+        
+<!--Absolver game info-->
+    <p class="partitle">Absolver</p>
+        <p>Absolver puts players behind the mask of a Prospect, who has taken a sacred vow and chosen to join the Absolvers, an elite corps of combatants fighting to maintain stability in the world. Monitored by the Guides, the new rulers of the fallen Adal Empire, players will wander these forsaken lands and encounter other Prospects online in order to learn their place in this world and eventually become Absolvers.
+        Along the way, they will learn new combat styles and attacks, and acquire better weapons, powers and armor. Battles between warriors are an intense real-time flow of attacks, dodges, feints and counters, with all aspects of gameplay customizable, including combat styles, weapons and even individual attack sequences in the player's Combat Deck.
+        </p>    
+        <a href="http://absolver.com"><p>Visit the official Absolver website</p></a>
+    
+<!--COD game info-->        
+    <p class="partitle">Call of Duty WWII</p>
+        <p>Call of Duty returns to its historical roots with Call of Duty: World War II, a blockbuster experience from Sledgehammer Games. From the beaches of Normandy to the Hurtgen Forest, experience a dramatic story highlighting some of the most dramatic and iconic moments of World War II as a young soldier who is facing the unforgiving reality of war alongside his brothers in arms.</p> 
+        <a href="https://www.callofduty.com/"><p>Visit the official Call of Duty WWII website</p></a>
+        
+<!--Battlegrounds game info-->         
+    <p class="partitle">Battlegrounds</p>
+        <p>In Battlegrounds players experience a BATTLE ROYALE game-mode will put up to 100 players on a remote island for a winner-takes-allshowdown where strategic gameplay is as important as shooting skills. Players will enter a last-man-standing battle where they try to locate weapons, vehicles and supplies in a graphically and tactically rich battleground that eventually forces players into a shrinking play zone as they engage in a tense and spectacular fight to the death.
+</p>
+        <a href="https://www.playbattlegrounds.com/main.pu"><p>Visit the official Battlegrounds website</p></a>
+        
+<!--Friday the 13th game info-->         
+    <p class="partitle">Friday the 13th</p>
+        <p>In this game players get to experience the terrors of the classic Friday the 13th movie like never before. You can play as a variety of campers with different abilities and attributes trying to outrun and escape Jason. You can step into the shoes of the iconic killer Jason Voorhees killing off campers one by one using different weapons and abilities.</p>
+          <a href="https://http://f13game.com/"><p>Visit the Friday the 13th website</p></a>
+    
+<!--Bottom black border-->
+    <div class="row">
+        <p class="signature">Designed By Khalil Taylor</p>
+    </div>
+        
+    </body>
+
+</html>
